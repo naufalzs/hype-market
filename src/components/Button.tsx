@@ -21,10 +21,10 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
               "text-white bg-amber-500 hover:bg-amber-400",
             ],
             variant === "secondary" && [
-              "text-black bg-white hover:bg-amber-600 hover:text-white",
+              "text-black bg-white hover:bg-amber-500 hover:text-white",
             ],
             variant === "outline" && [
-              "text-black bg-white ring-1 ring-violet-200 ",
+              "text-black bg-white ring-1 ring-violet-200 hover:bg-violet-200 ",
             ],
           ],
           className

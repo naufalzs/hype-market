@@ -19,8 +19,9 @@ const Hero = () => {
             Most demanded <br className="block md:hidden" />
             skena shop right now!
           </p>
-          <h1 className="font-bold text-4xl md:text-6xl leading-tight">
-            Stay Hyped. <br /> <span className="ml-12">Stay Ahead!</span>
+          <h1 className="font-bold text-4xl md:text-6xl leading-normal">
+            Stay Hyped. <br />{" "}
+            <span className="ml-12 leading-normal">Stay Ahead!</span>
           </h1>
           <p className="text-[#6A7789] text-md md:text-lg leading-[34px]">
             Never miss a beat with Hype-Market. We bring you the latest trends
