@@ -15,3 +15,11 @@ export interface Product extends ProductNameData {
 export interface ProductPayload {
   data: Product[];
 }
+
+export interface Testimonial {
+  id: number;
+  name: string;
+  role: string;
+  review: string;
+  rating: number;
+}

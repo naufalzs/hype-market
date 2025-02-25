@@ -10,7 +10,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Hype-Market",
   description:
-    "Hype-Market – Shop the Latest Hype and Streetwear Trends. Discover exclusive drops, limited editions, and the most hyped products in the skena. Stay ahead of the trend with fashion, tech, and lifestyle essentials. Shop now and join the hype revolution!",
+    "Hype-Market - Shop the Latest Hype and Streetwear Trends. Discover exclusive drops, limited editions, and the most hyped products in the skena. Stay ahead of the trend with fashion, tech, and lifestyle essentials. Shop now and join the hype revolution!",
 };
 
 export default function RootLayout({

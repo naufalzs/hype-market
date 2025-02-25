@@ -23,7 +23,7 @@ const Hero = () => {
             Stay Hyped. <br />{" "}
             <span className="ml-12 leading-normal">Stay Ahead!</span>
           </h1>
-          <p className="text-[#6A7789] text-md md:text-lg leading-[34px]">
+          <p className="text-zinc-500 text-md md:text-lg leading-[34px]">
             Never miss a beat with Hype-Market. We bring you the latest trends
             before they hit the mainstream. Shop now and stay one step ahead of
             the crowd!
