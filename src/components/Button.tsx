@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import React from "react";
 
-const ButtonVariant = ["primary", "secondary"] as const;
+const ButtonVariant = ["primary", "secondary", "outline"] as const;
 
 type ButtonProps = {
   variant?: (typeof ButtonVariant)[number];
@@ -22,6 +22,9 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
             ],
             variant === "secondary" && [
               "text-black bg-white hover:bg-amber-600 hover:text-white",
+            ],
+            variant === "outline" && [
+              "text-black bg-white ring-1 ring-violet-200 ",
             ],
           ],
           className
