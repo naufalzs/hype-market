@@ -55,7 +55,7 @@ const FeaturedProducts = () => {
         )}
       </Modal>
 
-      <section className="max-w-7xl mx-auto w-full py-[100px] px-5 md:px-8 xl:px-0">
+      <section className="max-w-7xl mx-auto w-full py-[80px] md:py-[100px] px-5 md:px-8 xl:px-0">
         <div className="flex flex-wrap items-center justify-center md:justify-between mb-8 gap-4">
           <h2 className="font-bold text-2xl leading-tight">
             Most Hyped Products

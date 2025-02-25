@@ -15,7 +15,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         type="button"
         disabled={disabled}
         className={cn(
-          "font-semibold px-6 py-4 rounded-full transition-colors duration-75 focus:outline-none focus-visible:ring-amber-700 focus-visible:ring",
+          "font-semibold px-4 md:px-6 py-3 md:py-4 rounded-full transition-colors duration-75 focus:outline-none focus-visible:ring-amber-700 focus-visible:ring",
           [
             variant === "primary" && [
               "text-white bg-amber-500 hover:bg-amber-400",
