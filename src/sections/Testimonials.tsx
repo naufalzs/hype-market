@@ -16,7 +16,9 @@ const Testimonials = () => {
           <h1 className="text-2xl md:text-5xl font-bold mb-3 md:mb-5">
             Happy Customers
           </h1>
-          <p className="text-zinc-500">We'd love to come back again soon</p>
+          <p className="text-zinc-500">
+            We&apos;d love to come back again soon
+          </p>
         </div>
         <div className="columns-1 md:columns-2 lg:columns-3 gap-8">
           {_testimonialsData.map((testimonial) => (
