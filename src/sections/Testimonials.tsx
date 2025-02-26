@@ -1,21 +1,28 @@
+"use client";
+
 import TestimonialCard from "@/components/TestimonialCard";
 import { testimonialsData } from "@/data/testimonialData";
-import { isMdScreen, isSmScreen } from "@/lib/breakpoint";
+import useBreakpoints from "@/hooks/useBreakpoints";
 
 const Testimonials = () => {
-  const _testimonialsData = isSmScreen
-    ? testimonialsData.slice(0, 3)
-    : isMdScreen
-      ? testimonialsData.slice(0, 5)
-      : testimonialsData;
+  const { isMd, isLg } = useBreakpoints();
+
+  const _testimonialsData = isMd
+    ? isLg
+      ? testimonialsData.slice()
+      : testimonialsData.slice(0, 5)
+    : testimonialsData.slice(0, 3);
 
   return (
-    <section className="w-full bg-violet-50 py-[80px] md:py-[100px]">
+    <section
+      id="testimonial"
+      className="w-full bg-violet-50 py-[80px] md:py-[100px]"
+    >
       <div className="mx-auto max-w-6xl space-y-8 px-5 md:px-8 xl:px-0">
         <div className="text-center md:text-left">
-          <h1 className="text-2xl md:text-5xl font-bold mb-3 md:mb-5">
+          <h2 className="text-2xl md:text-5xl font-bold mb-3 md:mb-5">
             Happy Customers
-          </h1>
+          </h2>
           <p className="text-zinc-500">
             We&apos;d love to come back again soon
           </p>

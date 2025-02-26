@@ -5,7 +5,10 @@ import HERO_IMG from "~/images/hero-image.jpg";
 
 const Hero = () => {
   return (
-    <section className="w-full bg-violet-50 pt-[120px] md:pt-[170px] pb-[50px]">
+    <section
+      id="hero"
+      className="w-full bg-violet-50 pt-[60px] md:pt-[170px] pb-[70px]"
+    >
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row justify-between items-center px-5 md:px-8 xl:px-0 gap-x-10">
         <div className="space-y-8 basis-[500px] xl:basis-[700px]">
           <p className="text-sm md:text-base bg-white inline-flex items-center gap-2.5 py-2 px-4 rounded-full font-semibold">
