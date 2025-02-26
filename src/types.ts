@@ -23,3 +23,8 @@ export interface Testimonial {
   review: string;
   rating: number;
 }
+
+export interface NavLink {
+  name: string;
+  href: string;
+}
