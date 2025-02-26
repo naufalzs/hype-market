@@ -7,7 +7,7 @@ import STAR_ICON from "~/icons/star.svg";
 
 type TestimonialCardProps = {
   testimonial: Testimonial;
-};
+} & React.ComponentPropsWithRef<"div">;
 
 const TestimonialCard = React.forwardRef<HTMLDivElement, TestimonialCardProps>(
   ({ testimonial, ...rest }, ref) => {
@@ -18,9 +18,9 @@ const TestimonialCard = React.forwardRef<HTMLDivElement, TestimonialCardProps>(
         {...rest}
       >
         <div className="flex gap-0.5">
-          {Array.from(new Array(testimonial.rating)).map((rate) => (
+          {Array.from(new Array(testimonial.rating)).map((rate, index) => (
             <Image
-              key={rate}
+              key={`${rate}-${index}`}
               src={STAR_ICON}
               alt="Rating"
               width={20}
