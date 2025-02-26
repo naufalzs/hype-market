@@ -16,7 +16,7 @@ const Testimonials = () => {
   return (
     <section
       id="testimonial"
-      className="w-full bg-violet-50 py-[80px] md:py-[100px]"
+      className="w-full bg-violet-50 py-[80px] md:py-[130px]"
     >
       <div className="mx-auto max-w-6xl space-y-8 px-5 md:px-8 xl:px-0">
         <div className="text-center md:text-left">

@@ -42,6 +42,7 @@ const FeaturedProducts = () => {
             exit={{ scale: 0 }}
             transition={{ ease: "easeInOut", duration: 0.3 }}
             onClick={(e) => e.stopPropagation()}
+            className="px-4"
           >
             <Image
               src={selected.image as string}
